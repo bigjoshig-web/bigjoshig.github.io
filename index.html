@@ -34,7 +34,6 @@
             padding: 0 2rem;
         }
 
-        /* Navigation */
         nav {
             position: fixed;
             top: 0;
@@ -85,7 +84,6 @@
             color: var(--primary);
         }
 
-        /* Hero Section */
         .hero {
             min-height: 100vh;
             display: flex;
@@ -259,7 +257,6 @@
             background: rgba(99, 102, 241, 0.1);
         }
 
-        /* Stats Section */
         .stats {
             padding: 8rem 0;
             background: linear-gradient(180deg, transparent, rgba(99, 102, 241, 0.03));
@@ -304,7 +301,6 @@
             font-weight: 600;
         }
 
-        /* Services Section */
         .services {
             padding: 8rem 0;
         }
@@ -420,7 +416,6 @@
             font-size: 1.2rem;
         }
 
-        /* CTA Section */
         .cta-section {
             padding: 10rem 0;
             text-align: center;
@@ -446,7 +441,6 @@
             margin-right: auto;
         }
 
-        /* Footer */
         footer {
             padding: 5rem 0 3rem;
             border-top: 1px solid rgba(255, 255, 255, 0.1);
@@ -499,22 +493,210 @@
         }
 
         @media (max-width: 1024px) {
-            .hero h1 {
-                font-size: 4rem;
-            }
+            .hero h1 { font-size: 4rem; }
         }
 
         @media (max-width: 768px) {
-            .hero h1 {
-                font-size: 3rem;
-            }
+            .hero h1 { font-size: 3rem; }
+            .nav-links { display: none; }
+            .services-grid { grid-template-columns: 1fr; }
+            .footer-content { grid-template-columns: 1fr; }
+            .cta-buttons { flex-direction: column; }
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="container">
+            <div class="logo">BIGJOSHIG</div>
+            <ul class="nav-links">
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
 
-            .nav-links {
-                display: none;
-            }
+    <section class="hero">
+        <div class="grid-background"></div>
+        <div class="glow-orb orb-1"></div>
+        <div class="glow-orb orb-2"></div>
+        
+        <div class="container">
+            <div class="hero-content">
+                <div class="badge">
+                    <span class="badge-pulse"></span>
+                    Available for Projects
+                </div>
+                <h1>
+                    <span class="gradient-text">Make.com</span><br>
+                    Automation Architect
+                </h1>
+                <p class="hero-description">
+                    Transforming chaos into seamless workflows. I build intelligent automation systems that scale your business, eliminate repetitive tasks, and unlock unprecedented efficiency.
+                </p>
+                <div class="cta-buttons">
+                    <a href="#contact" class="btn btn-primary">Let's Automate →</a>
+                    <a href="#services" class="btn btn-secondary">See Services</a>
+                </div>
+            </div>
+        </div>
+    </section>
 
-            .services-grid {
-                grid-template-columns: 1fr;
-            }
+    <section class="stats">
+        <div class="container">
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <div class="stat-number">200+</div>
+                    <div class="stat-label">Workflows Built</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">75+</div>
+                    <div class="stat-label">Happy Clients</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">15K+</div>
+                    <div class="stat-label">Hours Saved</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">99%</div>
+                    <div class="stat-label">Success Rate</div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-            .footer-content {
+    <section class="services" id="services">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-tag">What I Deliver</div>
+                <h2 class="section-title">Automation Excellence</h2>
+                <p class="section-description">
+                    Comprehensive automation solutions designed to transform how your business operates
+                </p>
+            </div>
+
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">⚡</div>
+                    <h3>Workflow Automation</h3>
+                    <p>Design and deploy sophisticated Make.com scenarios that handle complex business logic.</p>
+                    <ul class="service-features">
+                        <li>Multi-app orchestration</li>
+                        <li>Advanced conditional routing</li>
+                        <li>Real-time error handling</li>
+                        <li>Scalable infrastructure</li>
+                    </ul>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">🔗</div>
+                    <h3>API Integration</h3>
+                    <p>Seamlessly connect your entire tech stack with custom API integrations.</p>
+                    <ul class="service-features">
+                        <li>REST & GraphQL implementation</li>
+                        <li>Custom webhook architecture</li>
+                        <li>Data transformation pipelines</li>
+                        <li>Real-time synchronization</li>
+                    </ul>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">🎯</div>
+                    <h3>Process Optimization</h3>
+                    <p>Analyze, redesign, and supercharge your workflows for maximum efficiency.</p>
+                    <ul class="service-features">
+                        <li>Comprehensive workflow audits</li>
+                        <li>Performance benchmarking</li>
+                        <li>Cost optimization strategies</li>
+                        <li>Best practices deployment</li>
+                    </ul>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">📊</div>
+                    <h3>Data Management</h3>
+                    <p>Automate data collection, transformation, and reporting across platforms.</p>
+                    <ul class="service-features">
+                        <li>Database automation</li>
+                        <li>Report generation</li>
+                        <li>Data cleanup & enrichment</li>
+                        <li>Dashboard integration</li>
+                    </ul>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">🎓</div>
+                    <h3>Training & Support</h3>
+                    <p>Empower your team with Make.com knowledge and ongoing support.</p>
+                    <ul class="service-features">
+                        <li>One-on-one training</li>
+                        <li>Documentation creation</li>
+                        <li>Ongoing maintenance</li>
+                        <li>24/7 support available</li>
+                    </ul>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">🚀</div>
+                    <h3>Custom Solutions</h3>
+                    <p>Build unique automation solutions for your specific challenges.</p>
+                    <ul class="service-features">
+                        <li>Requirements analysis</li>
+                        <li>Custom development</li>
+                        <li>Testing & deployment</li>
+                        <li>Continuous improvement</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="cta-section" id="contact">
+        <div class="container">
+            <h2>Ready to Automate Your Business?</h2>
+            <p>Let's discuss how automation can transform your operations and drive growth.</p>
+            <div class="cta-buttons">
+                <a href="mailto:hello@bigjoshig.com" class="btn btn-primary">Book a Consultation</a>
+                <a href="https://calendly.com/bigjoshig" class="btn btn-secondary">Schedule a Call</a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <div class="logo" style="font-size: 2rem;">BIGJOSHIG</div>
+                    <p>Make.com Automation Expert helping businesses scale through intelligent workflow automation.</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="#services">Workflow Automation</a></li>
+                        <li><a href="#services">API Integration</a></li>
+                        <li><a href="#services">Process Optimization</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Contact</h4>
+                    <ul>
+                        <li><a href="mailto:hello@bigjoshig.com">Email</a></li>
+                        <li><a href="#">Book a Call</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Connect</h4>
+                    <ul>
+                        <li><a href="https://github.com/BIGJOSHIG">GitHub</a></li>
+                        <li><a href="#">LinkedIn</a></li>
+                        <li><a href="#">Twitter</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 BIGJOSHIG. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
